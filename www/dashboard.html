@@ -37,10 +37,10 @@
         <!-- Header with Logo and Account -->
         <div class="row settings">
             <div class="logo">
-              <div class="gn-logo"></div>
+              <div class="gn-logo img-circle box-shad"></div>
             </div>
             <div class="project-name">
-              <h2 style="margin-top:5px">My Channels</h2>
+              <h2 style="margin-top:5px; text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);">My Channels</h2>
             </div>
             <div class="profile">
 
@@ -51,7 +51,7 @@
 
 
   <div class="btn btn-default dropdown-toggle" type="button" id="account-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="background-color: transparent; border: none;">
-    User Account
+    <span style="text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);">User Account</span>
     <span class="caret"></span>
   </div>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -73,15 +73,15 @@
           <div class="custom-container">
 
             <div class="image-and-rating">
-              <div style="margin: 5px; height: 140px"></div>
+              <div style="margin: 5px; height: 140px; border: dotted 1px white;"></div>
             </div>
 
             <div class="meta-and-recommend">
-              <div style="margin: 5px; height: 140px"></div>
+              <div style="margin: 5px; height: 140px; border: dotted 1px white;"></div>
             </div>
 
             <div class="upcoming">
-              <div style="margin: 5px; height: 140px"></div>
+              <div style="margin: 5px; height: 140px; border: dotted 1px white;"></div>
             </div>
             
           </div>
@@ -91,26 +91,62 @@
 
     <div class="row channel-list">
 
-      <div class="slider">
-          <div id="left" class="left"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span></div>
-          <div id="right" class="right"><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span></div>
-          <div class="track" id="track">
-              <div class="book">
-              </div>
-              <div class="book">
-              </div>
-              <div class="book">
-              </div>
-              <div class="book">
-              </div>
-              <div class="book">
-              </div>
-              <div class="book">
-              </div>
-              <div class="book">
-              </div>
-          </div>
+      <div class="channel">
+
+        <h2 class="channel-name">Channel A</h2>
+
+
+        <div class="slider">
+            <div id="left1" class="left"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span></div>
+            <div id="right1" class="right"><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span></div>
+            <div class="track" id="track1">
+                <div class="show">
+                </div>
+                <div class="show">
+                </div>
+                <div class="show">
+                </div>
+                <div class="show">
+                </div>
+                <div class="show">
+                </div>
+                <div class="show">
+                </div>
+                <div class="show">
+                </div>
+            </div>
+        </div>
+        
       </div>
+
+      <div class="channel">
+
+        <h2 class="channel-name">Channel B</h2>
+
+        <div class="slider">
+            <div id="left2" class="left"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span></div>
+            <div id="right2" class="right"><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span></div>
+            <div class="track" id="track2">
+                <div class="show">
+                </div>
+                <div class="show">
+                </div>
+                <div class="show">
+                </div>
+                <div class="show">
+                </div>
+                <div class="show">
+                </div>
+                <div class="show">
+                </div>
+                <div class="show">
+                </div>
+            </div>
+        </div>
+
+      </div>
+
+
 
     </div> <!-- channel list -->
 
@@ -141,33 +177,66 @@
     <script>
     // Controls scrolling of channel shows 
 
+
+    // Channel/track 1
+
     setInterval(function() {
-      var left = parseInt($('#track').css('left'));
+      var left = parseInt($('#track1').css('left'));
       
-      if ($('#left').is(":hover")) {
-        if($('#track').position().left <= 5) {
-          $('#track').css('left', left+2);
+      if ($('#left1').is(":hover")) {
+        if($('#track1').position().left <= 5) {
+          $('#track1').css('left', left+2);
         }
       }
-      else if ($('#right').is(":hover")) {
-        if($('#track').position().left >= -150 + $(window).width() - 150 * $('#track').children().length) {
-          $('#track').css('left', left-2);
+      else if ($('#right1').is(":hover")) {
+        if($('#track1').position().left >= -150 + $(window).width() - 150 * $('#track1').children().length) {
+          $('#track1').css('left', left-2);
         }
       }
 
-      if($('#track').position().left > 5) {
-        $('#left').hide();
+      if($('#track1').position().left > 5) {
+        $('#left1').hide();
       } else {
-        $('#left').show();
+        $('#left1').show();
       }
 
-      if($('#track').position().left < -150 + $(window).width() - 150 * $('#track').children().length) {
-        $('#right').hide();
+      if($('#track1').position().left < -150 + $(window).width() - 150 * $('#track1').children().length) {
+        $('#right1').hide();
       } else {
-        $('#right').show();
+        $('#right1').show();
       }
 
+    }, 10);
 
+
+
+    // Channel/track 2
+
+    setInterval(function() {
+      var left = parseInt($('#track2').css('left'));
+      
+      if ($('#left2').is(":hover")) {
+        if($('#track2').position().left <= 5) {
+          $('#track2').css('left', left+2);
+        }
+      }
+      else if ($('#right2').is(":hover")) {
+        if($('#track2').position().left >= -150 + $(window).width() - 150 * $('#track2').children().length) {
+          $('#track2').css('left', left-2);
+        }
+      }
+
+      if($('#track2').position().left > 5) {
+        $('#left2').hide();
+      } else {
+        $('#left2').show();
+      }
+
+      if($('#track2').position().left < -150 + $(window).width() - 150 * $('#track2').children().length) {
+        $('#right2').hide();
+      } else {
+        $('#right2').show();
+      }
 
     }, 10);
 
