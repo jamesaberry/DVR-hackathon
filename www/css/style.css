@@ -116,7 +116,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7b7b7', end
  * Metadata panel
  */
 .row.meta-panel {
-  height: 166px; /* 150 + margsin (2x8) */
+  height: 200px; /* 150 + margsin (2x8) */
   padding: 8px 0;
   margin: 0;
   width: 100%;
@@ -141,21 +141,21 @@ box-shadow: -1px -1px 25px 5px rgba(0,0,0,0.75);
 
 
 .row.meta-panel .image-and-rating {
-  height: 150px;
+  height: 180px;
   width: 20%;
   /*min-width: 150px;*/
   float: left;
 }
 
 .row.meta-panel .meta-and-recommend {
-  height: 150px;
+  height: 180px;
   width: 60%;
   /*min-width: 250px;*/
   float:left;
 }
 
 .row.meta-panel .upcoming {
-  height: 150px;
+  height: 180px;
   width: 20%;
   /*min-width: 150px;*/
   float:left;
