@@ -1,0 +1,120 @@
+/*
+ * Fixed top
+ */
+
+body {
+  padding-top: 50px;
+}
+.fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background: #000;
+  min-height: 20px;
+}
+.custom-container {
+  margin: 0 20px;
+  padding: 0;
+}
+
+
+/*
+ * Settings panel
+ */
+.row .settings {
+  position: relative;
+  height: 45px;
+  padding: 0;
+  margin: 0;
+  min-width: 630px;
+}
+
+.row .settings .logo {
+  width: 50px;
+  height: 45px;
+  background: #444;
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+
+.row .settings .project-name {
+  position: absolute;
+  width: 250px;
+  height: 45px;
+  background: #444;
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+
+.row .settings .profile {
+  position: absolute;
+  right: 20px;
+  width: 250px;
+  height: 45px;
+  background: #444;
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+
+/*
+ * Metadata panel
+ */
+.row .meta-panel {
+  height: 166px; /* 150 + margsin (2x8) */
+  padding: 8px 0;
+  margin: 0;
+  width: 100%;
+  min-width: 630px;
+  min-height: 150px;
+  background: #344;
+}
+
+
+.row .meta-panel .image-and-rating {
+  height: 150px;
+  width: 20%;
+  /*min-width: 150px;*/
+  background: #444;
+  float: left;
+}
+
+.row .meta-panel .meta-and-recommend {
+  height: 150px;
+  width: 60%;
+  /*min-width: 250px;*/
+  background: #444;
+  float:left;
+}
+
+.row .meta-panel .upcoming {
+  height: 150px;
+  width: 20%;
+  background: #444;
+  float:left;
+}
+
+
+
+
+.channel-list {
+  padding: 166px 20px 0;
+  overflow: hidden;
+}
+
+
+
+/*
+ *
+ */
+.gn-logo {
+  background:url(../assets/gracenote_logo.png) left top;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  height:30px;
+  width: 30px;
+  display: block;
+  margin: 2px;
+}
