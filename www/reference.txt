@@ -1,0 +1,6 @@
+onConnect API key:
+eh5m8967x9kkyvp85xnz63zw
+
+
+Elastic search URI:
+http://qbldqatemp.tmsgf.trb:9200/
