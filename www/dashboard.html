@@ -31,133 +31,119 @@
 
   <body>
 
+<div class="wrapper">
 
-      <div class="fixed-top">
+  <div class="fixed-top">
 
-        <!-- Header with Logo and Account -->
-        <div class="row settings">
-            <div class="logo">
-              <div class="gn-logo img-circle box-shad"></div>
+    <!-- Header with Logo and Account -->
+    <div class="row settings">
+
+      <div class="logo">
+        <div class="gn-logo img-circle box-shad"></div>
+      </div>
+
+      <div class="project-name">
+        <h2 style="margin-top:5px; text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);">My Channels</h2>
+      </div>
+
+      <div class="profile">
+
+        <div class="dropdown" id="account">
+          <div style="float:right;">
+
+            <span class="glyphicon glyphicon-user" aria-hidden="true" style="left: 5px; top: 5px;"></span>
+
+
+            <div class="btn btn-default dropdown-toggle" type="button" id="account-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="background-color: transparent; border: none;">
+            <span style="text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);">User Account</span>
+            <span class="caret"></span>
             </div>
-            <div class="project-name">
-              <h2 style="margin-top:5px; text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);">My Channels</h2>
-            </div>
-            <div class="profile">
-
-<div class="dropdown" id="account">
-  <div style="float:right;">
-    
-    <span class="glyphicon glyphicon-user" aria-hidden="true" style="left: 5px; top: 5px;"></span>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Preferences</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+            </ul>
 
 
-  <div class="btn btn-default dropdown-toggle" type="button" id="account-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="background-color: transparent; border: none;">
-    <span style="text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);">User Account</span>
-    <span class="caret"></span>
-  </div>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Preferences</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-
-
-  </div>
-</div>
-
-            </div>
-        </div>
-
-        <!-- Panel with Meta data -->
-        <div class="row meta-panel">
-          <div class="custom-container">
-
-            <div class="image-and-rating">
-              <div style="margin: 5px; height: 140px; border: dotted 1px white;"></div>
-            </div>
-
-            <div class="meta-and-recommend">
-              <div style="margin: 5px; height: 140px; border: dotted 1px white;"></div>
-            </div>
-
-            <div class="upcoming">
-              <div style="margin: 5px; height: 140px; border: dotted 1px white;"></div>
-            </div>
-            
           </div>
         </div>
-      </div>
-
-
-    <div class="row channel-list">
-
-      <div class="channel">
-
-        <h2 class="channel-name">Channel A</h2>
-
-
-        <div class="slider">
-            <div id="left1" class="left"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span></div>
-            <div id="right1" class="right"><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span></div>
-            <div class="track" id="track1">
-                <div class="show">
-                </div>
-                <div class="show">
-                </div>
-                <div class="show">
-                </div>
-                <div class="show">
-                </div>
-                <div class="show">
-                </div>
-                <div class="show">
-                </div>
-                <div class="show">
-                </div>
-            </div>
-        </div>
-        
-      </div>
-
-      <div class="channel">
-
-        <h2 class="channel-name">Channel B</h2>
-
-        <div class="slider">
-            <div id="left2" class="left"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span></div>
-            <div id="right2" class="right"><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span></div>
-            <div class="track" id="track2">
-                <div class="show">
-                </div>
-                <div class="show">
-                </div>
-                <div class="show">
-                </div>
-                <div class="show">
-                </div>
-                <div class="show">
-                </div>
-                <div class="show">
-                </div>
-                <div class="show">
-                </div>
-            </div>
-        </div>
 
       </div>
+    </div> <!-- End of Log/Account header -->
+  </div> <!-- Fixed top -->
 
+  <!-- Panel with Meta data -->
+  <div class="row meta-panel">
+    <div class="custom-container">
 
-
-    </div> <!-- channel list -->
-
-
-    <div class="footer">
-      <div class="custom-container">
-        &copy; 2015-present. Gracenote, Inc. All rights reserved.
-      </div>
+    <div class="image-and-rating">
+      <div style="margin: 5px; height: 140px; border: dotted 1px white;"></div>
     </div>
 
+    <div class="meta-and-recommend">
+      <div style="margin: 5px; height: 140px; border: dotted 1px white;"></div>
+    </div>
 
+    <div class="upcoming">
+      <div style="margin: 5px; height: 140px; border: dotted 1px white;"></div>
+    </div>
+
+    </div>
+  </div>
+
+
+  <div class="row channel-list">
+
+    <div class="channel">
+
+    <h2 class="channel-name">Channel A</h2>
+
+
+      <div class="slider">
+        <div id="left1" class="left"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span></div>
+        <div id="right1" class="right"><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span></div>
+        <div class="track" id="track1">
+          <div class="show"></div>
+          <div class="show"></div>
+          <div class="show"></div>
+          <div class="show"></div>
+          <div class="show"></div>
+          <div class="show"></div>
+          <div class="show"></div>
+        </div>
+      </div>
+
+    </div> <!-- Channel A -->
+
+    <div class="channel">
+
+      <h2 class="channel-name">Channel B</h2>
+
+      <div class="slider">
+        <div id="left2" class="left"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span></div>
+        <div id="right2" class="right"><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span></div>
+        <div class="track" id="track2">
+          <div class="show"></div>
+          <div class="show"></div>
+          <div class="show"></div>
+          <div class="show"></div>
+          <div class="show"></div>
+          <div class="show"></div>
+          <div class="show"></div>
+        </div>
+      </div>
+
+    </div> <!-- Channel B -->
+
+  </div> <!-- channel list -->
+
+
+  <div class="footer">
+    <div class="custom-container">&copy; 2015-present. Gracenote, Inc. All rights reserved.</div>
+  </div>
+
+</div>
 
 
 
@@ -189,7 +175,7 @@
         }
       }
       else if ($('#right1').is(":hover")) {
-        if($('#track1').position().left >= -150 + $(window).width() - 150 * $('#track1').children().length) {
+        if($('#track1').position().left >= -$('.show').width() + $(window).width() - $('.show').width() * $('#track1').children().length) {
           $('#track1').css('left', left-2);
         }
       }
@@ -200,7 +186,7 @@
         $('#left1').show();
       }
 
-      if($('#track1').position().left < -150 + $(window).width() - 150 * $('#track1').children().length) {
+      if($('#track1').position().left < -$('.show').width() + $(window).width() - 250 * $('#track1').children().length) {
         $('#right1').hide();
       } else {
         $('#right1').show();
@@ -221,7 +207,7 @@
         }
       }
       else if ($('#right2').is(":hover")) {
-        if($('#track2').position().left >= -150 + $(window).width() - 150 * $('#track2').children().length) {
+        if($('#track2').position().left >= -$('.show').width() + $(window).width() - $('.show').width() * $('#track2').children().length) {
           $('#track2').css('left', left-2);
         }
       }
@@ -232,7 +218,7 @@
         $('#left2').show();
       }
 
-      if($('#track2').position().left < -150 + $(window).width() - 150 * $('#track2').children().length) {
+      if($('#track2').position().left < -$('.show').width() + $(window).width() - $('.show').width() * $('#track2').children().length) {
         $('#right2').hide();
       } else {
         $('#right2').show();

@@ -8,15 +8,6 @@ html, body {
 
 body {
   padding-top: 50px;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,45484d+100 */
-background: rgb(0,0,0); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(0,0,0,1) 0%, rgba(69,72,77,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(69,72,77,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* IE10+ */
-background: linear-gradient(135deg,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }
 
@@ -28,7 +19,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
   right: 0;
   left: 0;
   z-index: 1030;
-  min-height: 20px;
+  /*min-height: 20px;*/
 
 }
 .custom-container {
@@ -173,7 +164,7 @@ box-shadow: -1px -1px 25px 5px rgba(0,0,0,0.75);
 
 
 .channel-list {
-  margin-top: 170px; /* The reason for this is unknown to me */
+  /*margin-top: 170px;  The reason for this is unknown to me */
   padding: 0px 20px 0;
 }
 
@@ -248,8 +239,8 @@ box-shadow: -1px -1px 25px 5px rgba(0,0,0,0.75);
     padding: 0;
     border: 0;
     
-    width: 150px;
-    height: 130px;
+    width: 250px;
+    height: 170px;
     
     -webkit-transition: opacity 0.2s;
     -moz-transition: opacity 0.2s;
@@ -303,9 +294,22 @@ box-shadow: -1px -1px 25px 5px rgba(0,0,0,0.75);
 }
 
 
+.wrapper {
+  min-height:100%;
+  position:relative;
+  padding-bottom: 70px;
 
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,45484d+100 */
+background: rgb(0,0,0); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(0,0,0,1) 0%, rgba(69,72,77,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(69,72,77,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-
+}
 
 
 /*
@@ -314,7 +318,6 @@ box-shadow: -1px -1px 25px 5px rgba(0,0,0,0.75);
 .footer {
 
 
-  text-align: center;
   position: absolute;
   bottom: 0px;
   padding-top: 10px;
