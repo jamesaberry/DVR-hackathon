@@ -38,6 +38,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 
 /*
+ * Account menu
+ */
+
+#account {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+
+#account-menu {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  font-size: 1.3em;
+}
+
+#account:hover {
+  background-color:rgba(0,0,0,0.5); /*where 0.5 stands for 50% opacity*/
+}
+
+
+
+
+
+
+
+
+/*
  * Settings panel
  */
 .row.settings {
@@ -65,7 +95,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7b7b7', end
   height: 45px;
   display: inline-block;
   margin: 0 0 0 20px;
-  border: dotted 1px white;
 }
 
 .row.settings .project-name {
@@ -74,17 +103,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7b7b7', end
   height: 45px;
   display: inline-block;
   margin: 0 0 0 20px;
-  border: dotted 1px white;
 }
 
 .row.settings .profile {
   position: absolute;
   right: 20px;
-  width: 250px;
+  width: 175px;
   height: 45px;
   display: inline-block;
   margin: 0 0 0 20px;
-  border: dotted 1px white;
 }
 
 /*
@@ -162,10 +189,10 @@ box-shadow: -1px -1px 25px 5px rgba(0,0,0,0.75);
  */
 .gn-logo {
   background:url(../assets/gracenote_logo.png) left top;
-  background-size: 30px;
+  background-size: 40px;
   background-repeat: no-repeat;
-  height:30px;
-  width: 30px;
+  height:40px;
+  width: 40px;
   display: block;
   margin: 2px;
 }
@@ -285,6 +312,9 @@ box-shadow: -1px -1px 25px 5px rgba(0,0,0,0.75);
  *
  */
 .footer {
+
+
+  text-align: center;
   position: absolute;
   bottom: 0px;
   padding-top: 10px;
