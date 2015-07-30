@@ -62,35 +62,30 @@
       </div>
     </div>
 
-    <div class="custom-container">
-
-      <div class="channel-list">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.  All you get is this text and a mostly barebones HTML document. ad;lkfjasl;k fjasdlkfj sldjfl;adjsf;ldksfj l;sdfj alsjks;ljkfas;ldfjk </p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    <div class="channel-list">
+      <div class="slider">
+          <div id="left" class="left">&lt;</div>
+          <div id="right" class="right">&gt;</div>
+          <div class="track" id="track">
+              <div class="book">
+              </div>
+              <div class="book">
+              </div>
+              <div class="book">
+              </div>
+              <div class="book">
+              </div>
+              <div class="book">
+              </div>
+              <div class="book">
+              </div>
+              <div class="book">
+              </div>
+          </div>
       </div>
+    </div>
 
-    </div><!-- /.container -->
+
 
 
     <!-- Bootstrap core JavaScript
@@ -100,5 +95,30 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+
+
+
+    <script>
+    // Controls scrolling of channel shows 
+
+    setInterval(function() {
+      var left = parseInt($('#track').css('left'));
+      
+      if ($('#left').is(":hover")) {
+        if($('#track').position().left <= 5) {
+          $('#track').css('left', left+2);
+        }
+      }
+      else if ($('#right').is(":hover")) {
+        if($('#track').position().left >= -150 + $(window).width() - 150 * $('#track').children().length) {
+          $('#track').css('left', left-2);
+        }
+      }
+    }, 10);
+
+    </script>
   </body>
 </html>

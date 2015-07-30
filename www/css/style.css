@@ -98,10 +98,22 @@ body {
 
 
 
-
 .channel-list {
   padding: 166px 20px 0;
-  overflow: hidden;
+}
+
+.channel {
+  width: 100%;
+  min-width: 645px;
+  overflow: scroll;
+}
+
+.test-show {
+  width: 150px;
+  height: 100px;
+  background: #388;
+  float: left;
+  margin: 5px;
 }
 
 
@@ -117,4 +129,104 @@ body {
   width: 30px;
   display: block;
   margin: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Channel slider action
+ */
+
+.slider {
+    position: relative;
+    
+    background-color: #ccc;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    
+    overflow: hidden;
+}
+.track {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    width: 2000px;
+
+}
+.book {
+    float: left;
+    
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    border: 0;
+    
+    width: 150px;
+    height: 130px;
+    
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+}
+.book:hover {
+    opacity: 0.5;
+}
+.book:nth-child(1) {
+    background-color: #ff0000;
+}
+.book:nth-child(2) {
+    background-color: #ffaa00;
+}
+.book:nth-child(3) {
+    background-color: #ffff00;
+}
+.book:nth-child(4) {
+    background-color: #00ff00;
+}
+.book:nth-child(5) {
+    background-color: #0000ff;
+}
+.book:nth-child(6) {
+    background-color: #aa00ff;
+}
+.book:nth-child(7) {
+    background-color: #ff00ff;
+}
+.left, .right {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    top: 57px;
+    
+    cursor: pointer;
+    z-index: 1;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
 }
