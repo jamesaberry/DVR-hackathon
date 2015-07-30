@@ -223,13 +223,14 @@
         }
       }
 
+
       if($('#track2').position().left > 5) {
         $('#left2').hide();
       } else {
         $('#left2').show();
       }
 
-      if($('#track2').position().left < -$('.show').width() + $(window).width() - $('.show').width() * $('#track2').children().length) {
+      if($('#track2').position().left < -$('.show').width() + $(window).width() - 250 * $('#track2').children().length) {
         $('#right2').hide();
       } else {
         $('#right2').show();

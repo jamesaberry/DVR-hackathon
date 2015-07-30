@@ -170,6 +170,7 @@ box-shadow: -1px -1px 25px 5px rgba(0,0,0,0.75);
 
 .channel-name {
   margin-left: 20px;
+  color: #736E6E;
 }
 
 
@@ -317,7 +318,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
  */
 .footer {
 
-
+  text-align: center;
   position: absolute;
   bottom: 0px;
   padding-top: 10px;
