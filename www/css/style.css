@@ -228,7 +228,7 @@ box-shadow: -1px -1px 25px 5px rgba(0,0,0,0.75);
     padding: 0;
     border: 0;
 
-    width: 2000px;
+    width: 2500px;
 
 }
 .show {
@@ -240,7 +240,7 @@ box-shadow: -1px -1px 25px 5px rgba(0,0,0,0.75);
     border: 0;
     
     width: 250px;
-    height: 170px;
+    height: 200px;
     
     -webkit-transition: opacity 0.2s;
     -moz-transition: opacity 0.2s;
