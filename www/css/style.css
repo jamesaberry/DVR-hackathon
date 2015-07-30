@@ -144,7 +144,7 @@ box-shadow: -1px -1px 25px 5px rgba(0,0,0,0.75);
 
 
 .channel-list {
-  margin-top: 170px;
+  margin-top: 170px; /* The reason for this is unknown to me */
   padding: 0px 20px 0;
 }
 

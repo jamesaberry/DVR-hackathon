@@ -127,6 +127,21 @@
           $('#track').css('left', left-2);
         }
       }
+
+      if($('#track').position().left > 5) {
+        $('#left').hide();
+      } else {
+        $('#left').show();
+      }
+
+      if($('#track').position().left < -150 + $(window).width() - 150 * $('#track').children().length) {
+        $('#right').hide();
+      } else {
+        $('#right').show();
+      }
+
+
+
     }, 10);
 
     </script>
