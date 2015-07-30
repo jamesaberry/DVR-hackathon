@@ -162,7 +162,7 @@ def main(argv):
                         'available' : available
                     }
 
-                    res = es.index(index="episode_data", doc_type='pesan', id=current_episode_id, body=doc)
+                    res = es.index(index="episodes", doc_type='pesan', id=current_episode_id, body=doc)
                     current_episode_id = current_episode_id + 1
 
             #if the date exists and we didn't find the episode title try to match the dates
@@ -190,7 +190,7 @@ def main(argv):
                         'episode_number' : episode_number
                     }
 
-                    res = es.index(index="episode_data", doc_type='pesan', id=current_episode_id, body=doc)
+                    res = es.index(index="episodes", doc_type='pesan', id=current_episode_id, body=doc)
                     current_episode_id = current_episode_id + 1
         
         #mark this episode as not found.
