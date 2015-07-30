@@ -1,6 +1,31 @@
-onConnect API key:
+OnConnect API
+-------------------------
+
+onConnect API key
 eh5m8967x9kkyvp85xnz63zw
 
+onConnect API Explorer
+http://developer.tmsapi.com/io-docs
 
-Elastic search URI:
+
+
+
+
+
+
+NED API
+--------------------------
+
+Seasons for show (by seriesId)
+http://ned-dev.tmsgf.trb:7070/NedDataServices/programs/seasonsForShow?showProgramId=184062
+
+Episodes (seriesId and season #)
+http://ned-dev.tmsgf.trb:7070/NedDataServices/programs/episodesForShow?showProgramId=184144&seasonNumber=1
+
+
+
+MISC
+--------------------------
+
+Elastic search URI
 http://qbldqatemp.tmsgf.trb:9200/
